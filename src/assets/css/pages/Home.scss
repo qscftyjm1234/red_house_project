@@ -1,0 +1,43 @@
+.home {
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
+// component => DataTable
+
+.table {
+  margin: 24px 0;
+
+  &-title {
+    font-size: 20px;
+  }
+}
+.el-tabs__header {
+  margin: 0;
+}
+.el-tabs__item {
+  background: #dddddd;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+  height: 50px;
+  padding: 0px 24px;
+  box-sizing: border-box;
+}
+.el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  color: $main;
+  background: #fff;
+}
+.el-tabs__content {
+  padding: 15px 20px;
+  background: #fff;
+}
+
+.el-dropdown-link {
+  cursor: pointer;
+}
+.el-breadcrumb__item a {
+  color: $main !important;
+}
