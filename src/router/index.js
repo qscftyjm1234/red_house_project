@@ -5,16 +5,20 @@ import Home from '@/pages/Home/index.vue';
 Vue.use(Router);
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: Home,
     component: Home,
   },
+  {
+    path: '/',
+    redorect: '/home',
+  },
   // {
-    // path: '/About',
-    // name: 'About',
-    // component: require('@/pages/About/index').default,
-    //需要驗證的
-    // meta: { authorization: true },
+  // path: '/About',
+  // name: 'About',
+  // component: require('@/pages/About/index').default,
+  //需要驗證的
+  // meta: { authorization: true },
   // },
 ];
 const router = new Router({
