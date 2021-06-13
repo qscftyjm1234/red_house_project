@@ -5,7 +5,7 @@ import Home from '@/pages/Home/index.vue';
 Vue.use(Router);
 const routes = [
   {
-    path: '/',
+    path: '/dist',
     name: Home,
     component: Home,
   },
