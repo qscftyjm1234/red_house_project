@@ -9,13 +9,13 @@ module.exports = {
 
   publicPath:
     process.env.NODE_ENV === 'production' ? '/red_house_project/' : '/',
-  css: {
-    loaderOptions: {
-      sass: {
-        data: `
-             @import "@/assets/css/app.scss";
-          `,
-      },
-    },
-  },
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       data: `
+  //            @import "@/assets/css/app.scss";
+  //         `,
+  //     },
+  //   },
+  // },
 };
