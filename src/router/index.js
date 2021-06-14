@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/pages/Home/index.vue';
+import Text from '@/pages/Text/index.vue';
 
 Vue.use(Router);
 const routes = [
@@ -9,12 +10,17 @@ const routes = [
     name: Home,
     component: Home,
   },
+  {
+    path: '/text',
+    name: Text,
+    component: Text,
+  },
   // {
-    // path: '/About',
-    // name: 'About',
-    // component: require('@/pages/About/index').default,
-    //需要驗證的
-    // meta: { authorization: true },
+  // path: '/About',
+  // name: 'About',
+  // component: require('@/pages/About/index').default,
+  //需要驗證的
+  // meta: { authorization: true },
   // },
 ];
 const router = new Router({

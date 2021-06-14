@@ -1,18 +1,20 @@
-#!/usr/bin/env sh
+# gino 自動部屬指令
 
-# 当发生错误时中止脚本
+# 當發生錯誤時終止腳本運行
 set -e
 
-# 构建
+# 建立輸出檔案
 npm run build
 
-# cd 到构建输出的目录下 
-# cd dist
+# 移動至到打包後的dist目錄
+cd dist
 
-# git init
-git add .
+git init
+git add -A
 git commit -m 'deploy'
 
-# 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f 
-# cd -
+# 將 dist資料夾中的內容推送至遠端 hexWeek6Demo的 gh-pages分支中，並強制無條件將舊有的內容取代成目前的內容（指令 git push -f)
+git push -f https://github.com/qscftyjm1234/red_house_project.git master:gh-pages
+cd -
+
+# 執行指令，在終端機輸入 deploy.sh
