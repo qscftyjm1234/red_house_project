@@ -2,7 +2,7 @@
   <div class="home">
     <Breadcrumb />
     <h1>智慧名單</h1>
-    <el-tabs type="card">
+    <el-tabs type="card" style="margin-bottom: 20px">
       <el-tab-pane label="全部">
         <DataTable
           :data="data"
@@ -33,10 +33,10 @@ export default {
     //打入假的API
     async getFakedata() {
       await axios
-        .get("http://localhost:3000/posts")
+        .get("https://qscftyjm1234.github.io/0903_liceDemo/db.json")
         .then((res) => {
-          this.fakeDatas = res.data;
-          console.log(res.data);
+          console.log(res.data.posts);
+          this.fakeDatas = res.data.posts;
         })
         .catch((error) => {
           console.log(error);

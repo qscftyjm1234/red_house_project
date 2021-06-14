@@ -24,7 +24,7 @@ const routes = [
   // },
 ];
 const router = new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: routes,
 });
 //到那一頁前的判斷  , 檢查需要登入狀態的頁面
