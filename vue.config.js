@@ -8,7 +8,7 @@ module.exports = {
   // },
 
   publicPath:
-    process.env.NODE_ENV === 'production' ? '/red_house_project/dist/' : '/',
+    process.env.NODE_ENV === 'production' ? '/red_house_project/' : '/',
   css: {
     loaderOptions: {
       sass: {
